@@ -94,10 +94,33 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\fonts\fontawesome-webfont.svg" />
+    <Content Include="img\Projects\Blog.png" />
+    <Content Include="img\Projects\budget.png" />
+    <Content Include="img\Projects\BugTracker.png" />
+    <Content Include="img\Projects\CarFinder.png" />
+    <Content Include="img\Projects\html5.png" />
+    <Content Include="img\Projects\javascript.png" />
+    <Content Include="img\Projects\shoppingcart.png" />
+    <Content Include="img\Projects\Webapi.png" />
+    <Content Include="img\Projects\Xamarin.png" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\OLDfonts\fontawesome-webfont.eot" />
+    <Content Include="css\OLDfonts\fontawesome-webfont.ttf" />
+    <Content Include="css\OLDfonts\fontawesome-webfont.woff" />
+    <Content Include="css\OLDfonts\FontAwesome.otf" />
+    <Content Include="css\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\fonts\fontawesome-webfont.woff2" />
+    <Content Include="css\fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\cdubuche-portfolio - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\cdubuche-portfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -106,11 +129,72 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\OLDfont-awesome.css" />
+    <Content Include="css\OLDfonts\fontawesome-webfont.svg" />
+    <Content Include="css\jquery.fancybox.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\owl.theme.css" />
+    <Content Include="css\style.blue.css" />
+    <Content Include="css\style.default.css" />
+    <Content Include="css\style.green.css" />
+    <Content Include="css\style.pink.css" />
+    <Content Include="css\style.red.css" />
+    <Content Include="css\style.violet.css" />
+    <Content Include="favicon.png" />
+    <Content Include="img\about.jpg" />
+    <Content Include="img\customers\botas66.png" />
+    <Content Include="img\customers\cslink.png" />
+    <Content Include="img\customers\evian.png" />
+    <Content Include="img\customers\kofola.png" />
+    <Content Include="img\customers\mdfc.png" />
+    <Content Include="img\customers\vanek.png" />
+    <Content Include="img\favicon.png" />
+    <Content Include="img\home.jpg" />
+    <Content Include="img\logo-big.png" />
+    <Content Include="img\main-slider1.jpg" />
+    <Content Include="img\main-slider2.jpg" />
+    <Content Include="img\main-slider3.jpg" />
+    <Content Include="img\main-slider4.jpg" />
+    <Content Include="img\marker.png" />
+    <Content Include="img\parallax.jpg" />
+    <Content Include="img\person-1.jpg" />
+    <Content Include="img\person-2.jpg" />
+    <Content Include="img\person-3.jpg" />
+    <Content Include="img\person-4.jpg" />
+    <Content Include="img\portfolio-1.jpg" />
+    <Content Include="img\portfolio-2.jpg" />
+    <Content Include="img\portfolio-3.jpg" />
+    <Content Include="img\portfolio-4.jpg" />
+    <Content Include="img\portfolio-5.jpg" />
+    <Content Include="img\portfolio-6.jpg" />
+    <Content Include="img\portfolio-7.jpg" />
+    <Content Include="img\portfolio-8.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\front.js" />
+    <Content Include="js\gmaps.js" />
+    <Content Include="js\jquery-1.11.0.min.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.counterup.min.js" />
+    <Content Include="js\jquery.parallax-1.1.3.js" />
+    <Content Include="js\jquery.scrollTo.min.js" />
+    <Content Include="js\js.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\masonry.pkgd.min.js" />
+    <Content Include="js\modernizr-2.6.2.min.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="js\waypoints.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
