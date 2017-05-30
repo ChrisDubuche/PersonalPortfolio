@@ -96,6 +96,18 @@
   <ItemGroup>
     <Content Include="css\font-awesome.css" />
     <Content Include="css\fonts\fontawesome-webfont.svg" />
+    <Content Include="img\blogging01.gif" />
+    <Content Include="img\blogging02.gif" />
+    <Content Include="img\bugtracker01.gif" />
+    <Content Include="img\bugtracker02.gif" />
+    <Content Include="img\carfinder01.gif" />
+    <Content Include="img\Carfinder02.jpg" />
+    <Content Include="img\finances01.gif" />
+    <Content Include="img\finances02.gif" />
+    <Content Include="img\HTML5CF01.jpg" />
+    <Content Include="img\html5cf02.gif" />
+    <Content Include="img\javascript.gif" />
+    <Content Include="img\javascript2.gif" />
     <Content Include="img\Projects\Blog.png" />
     <Content Include="img\Projects\budget.png" />
     <Content Include="img\Projects\BugTracker.png" />
@@ -105,6 +117,10 @@
     <Content Include="img\Projects\shoppingcart.png" />
     <Content Include="img\Projects\Webapi.png" />
     <Content Include="img\Projects\Xamarin.png" />
+    <Content Include="img\shoppingcart01.gif" />
+    <Content Include="img\shoppingcart02.gif" />
+    <Content Include="img\xamarin00.gif" />
+    <Content Include="img\xamarin01.gif" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

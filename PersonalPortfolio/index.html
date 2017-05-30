@@ -11,11 +11,11 @@
     <meta name="robots" content="all,follow">
     <meta name="googlebot" content="index,follow,snippet,archive">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content=".NET developer with a strong sales background looking for a challenging role where I can generate significant value." />
+    <meta name="description" content=".NET developer looking for a challenging role where I can generate significant value." />
 
     <title>Christian Yves Dubuche | Full Stack Developer</title>
 
-    <meta name="keywords" content="">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100' rel='stylesheet' type='text/css'>
 
@@ -43,7 +43,13 @@
 
     <!-- Mordernizr -->
     <script src="js/modernizr-2.6.2.min.js"></script>
-
+<!--    Rounded the corners of the project boxes-->
+    <style>
+        
+            .reference-item {
+            border-radius: 15px;
+            }
+    </style>
     <!-- Responsivity for older IE -->
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
@@ -132,8 +138,8 @@ _________________________________________________________ -->
 
                         <div class="row">
 
-                            <div class="col-sm-6 text-left" data-animate="fadeInUp">
-                                <h3>
+                            <div class="col-sm-12 text-left" data-animate="fadeInUp">
+                                <h2>
                                 <p>.NET developer with a strong  <strong>sales and marketing </strong> background.</p>
 
                                 <p>Recognized for my <strong>“take-charge” work ethic</strong>, I’m not afraid to share my insights & methods with my team.</p>
@@ -141,11 +147,12 @@ _________________________________________________________ -->
                                 <p>Skilled in <strong>ASP.NET, MVC, AngularJS, C#, JavaScript, jQuery, CSS, HTML, SQL, Visual Studio, SSMS, & MySQL</strong>.</p>
 
                                 <p>I hope enter into a challenging role with a dynamic company where I can generate <strong>significant value</strong>.</p>
-                                </h3>
+                                </h2>
 
                             </div>
-
-                            <div class="col-sm-6" data-animate="fadeInUp">
+                            
+                            <!--Removing the Section displaying arbitrary programming language strength-->
+                            <!--<div class="col-sm-6" data-animate="fadeInUp">
 
                                 <div class="skill-item">
                                     <div class="progress-title">
@@ -203,7 +210,7 @@ _________________________________________________________ -->
                                 </div>
 
 
-                            </div>
+                            </div>-->
                         </div>
 
                     </div>
@@ -273,7 +280,7 @@ _________________________________________________________ -->
 
         <!-- *** TESTIMONIALS ***
 _________________________________________________________ -->
-
+        <!--Commenting out the testimonial section until I garner more clients-->
         <div class="section text-gray" id="testimonials" data-animate="fadeInUp">
 
             <div class="container">
@@ -370,7 +377,7 @@ _________________________________________________________ -->
                             </div>
                         </li>
                     </ul>
-                    <!-- /.owl-carousel -->
+                    <!-- /.owl-carousel 
                 </div>
                 <!-- /.12 -->
             </div>
@@ -386,34 +393,35 @@ _________________________________________________________ -->
         <div class="section text-parallax parallax-image1 services" id="services2">
             <div class="container">
                 <div class="row showcase">
-                    <div class="col-md-3 col-sm-6" data-animate="fadeInUp">
+                    <div class="col-md-4 col-sm-6" data-animate="fadeInUp">
                         <div class="item">
                             <div class="icon"><i class="fa fa-align-justify"></i>
                             </div>
-                            <h4><span class="counter">1120</span><br>
+                            <h4><span class="counter">1</span><br>
 
 			Websites</h4>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6" data-animate="fadeInUp">
+                    <div class="col-md-4 col-sm-6" data-animate="fadeInUp">
                         <div class="item">
                             <div class="icon"><i class="fa fa-users"></i>
                             </div>
-                            <h4><span class="counter">460</span><br>  
+                            <h4><span class="counter">1</span><br>  
 
 			Satisfied Clients</h4>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6" data-animate="fadeInUp">
+                    <div class="col-md-4 col-sm-6" data-animate="fadeInUp">
                         <div class="item">
                             <div class="icon"><i class="fa fa-copy"></i>
                             </div>
-                            <h4><span class="counter">810</span><br>
+                            <h4><span class="counter">7</span><br>
 
 			Projects</h4>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6" data-animate="fadeInUp">
+                    <!--Removed the Magazines & etc section-->
+                    <!--<div class="col-md-3 col-sm-6" data-animate="fadeInUp">
                         <div class="item">
                             <div class="icon"><i class="fa fa-font"></i>
                             </div>
@@ -421,7 +429,7 @@ _________________________________________________________ -->
 
 			Magazines and Brochures</h4>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <!-- /.row -->
             </div>
@@ -447,13 +455,21 @@ _________________________________________________________ -->
                     <ul id="filter" data-animate="fadeInUp">
                         <li class="active"><a href="#" data-filter="all">All</a>
                         </li>
-                        <li><a href="#" data-filter="webdesign">Bootstrap</a>
+                        <li><a href="#" data-filter="webdesign">HTML5</a>
                         </li>
-                        <li><a href="#" data-filter="linq">LINQ</a>
+                        <li><a href="#" data-filter="Javascript">Javascript</a>
                         </li>
-                        <li><a href="#" data-filter="sql">SQL</a>
+                        <li><a href="#" data-filter="ShoppingCart">Shopping Cart</a>
                         </li>
-                        <li><a href="#" data-filter="xamarin">Xamarin</a>
+                        <li><a href="#" data-filter="Blog">Blog</a>
+                        </li>
+                        <li><a href="#" data-filter="BugTracker">Bug Tracker</a>
+                        </li>
+                        <li><a href="#" data-filter="FinancialPlanner">Financial Planner</a>
+                        </li>
+                        <li><a href="#" data-filter="CarFinder">Car Finder</a>
+                        </li>
+                        <li><a href="#" data-filter="Xamarin">Xamarin</a>
                         </li>
                     </ul>
 
@@ -485,13 +501,9 @@ _________________________________________________________ -->
                                     </div>
                                 </a>
 
-                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+                                <div class="sr-only reference-description" data-images="img/HTML5CF01.jpg,img/HTML5CF02.gif">
 
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p>First developed by Tim Berners-Lee in 1990, HTML is short for HyperText Markup Language. HTML is used to create electronic documents (called pages) that are displayed on the World Wide Web. Each page contains a series of connections to other pages called hyperlinks.</p>
 
                                     <p class="buttons">
                                         <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
@@ -500,7 +512,7 @@ _________________________________________________________ -->
                                 </div>
                             </div>
                         </div>
-                        <div class="reference-item" data-category="seo">
+                        <div class="reference-item" data-category="Javascript">
                             <div class="reference">
                                 <a href="#">
                                     <img src="img/projects/javascript.png" class="img-responsive" alt="" />
@@ -511,13 +523,9 @@ _________________________________________________________ -->
                                     </div>
                                 </a>
 
-                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+                                <div class="sr-only reference-description" data-images="img/javascript.gif,img/javascript2.gif">
 
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p>Used in Web pages, JavaScript is a "client-side" programming language. This means JavaScript scripts are read, interpreted and executed in the client, which is your Web browser. By comparison, "server-side" programming languages run on a remote computer, such as a server hosting a website.</p>
 
                                     <p class="buttons">
                                         <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
@@ -527,7 +535,7 @@ _________________________________________________________ -->
                             </div>
                         </div>
 
-                        <div class="reference-item" data-category="marketing">
+                        <div class="reference-item" data-category="ShoppingCart">
                             <div class="reference">
                                 <a href="#">
                                     <img src="img/projects/shoppingcart.png" class="img-responsive" alt="" />
@@ -538,13 +546,9 @@ _________________________________________________________ -->
                                     </div>
                                 </a>
 
-                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+                                <div class="sr-only reference-description" data-images="img/shoppingcart01.gif,img/shoppingcart02.gif">
 
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p>In online marketing, a shopping cart is a piece of e-commerce software on a web server that allows visitors to an Internet site to select items for eventual purchase.</p>
 
                                     <p class="buttons">
                                         <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
@@ -555,7 +559,7 @@ _________________________________________________________ -->
                             </div>
                         </div>
 
-                        <div class="reference-item" data-category="marketing">
+                        <div class="reference-item" data-category="Blog">
                             <div class="reference">
                                 <a href="#">
                                     <img src="img/projects/blog.png" class="img-responsive" alt="" />
@@ -566,13 +570,9 @@ _________________________________________________________ -->
                                     </div>
                                 </a>
 
-                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+                                <div class="sr-only reference-description" data-images="img/blogging01.gif,img/blogging02.gif">
 
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p>A blog is a frequently updated online personal journal or diary. It is a place to express yourself to the world. A place to share your thoughts and your passions.</p>
 
                                     <p class="buttons">
                                         <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
@@ -582,7 +582,7 @@ _________________________________________________________ -->
                             </div>
                         </div>
 
-                        <div class="reference-item" data-category="webdesign">
+                        <div class="reference-item" data-category="BugTracker">
                             <div class="reference">
                                 <a href="#">
                                     <img src="img/projects/bugtracker.png" class="img-responsive" alt="" />
@@ -593,13 +593,9 @@ _________________________________________________________ -->
                                     </div>
                                 </a>
 
-                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+                                <div class="sr-only reference-description" data-images="img/bugtracker01.gif,img/bugtracker02.gif">
 
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p>A bug tracking system or defect tracking system is a software application that keeps track of reported software bugs in software development projects. It may be regarded as a type of issue tracking system.</p>
 
                                     <p class="buttons">
                                         <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
@@ -610,7 +606,7 @@ _________________________________________________________ -->
                             </div>
                         </div>
 
-                        <div class="reference-item" data-category="other">
+                        <div class="reference-item" data-category="FinancialPlanner">
                             <div class="reference">
                                 <a href="#">
                                     <img src="img/projects/budget.png" class="img-responsive" alt="" />
@@ -621,13 +617,9 @@ _________________________________________________________ -->
                                     </div>
                                 </a>
 
-                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+                                <div class="sr-only reference-description" data-images="img/finances01.gif,imgfinances02.gif">
 
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p>A financial planner can help you address issues of insurance, assets, money management, and more. A planner can help devise an equitable settlement that makes long-term financial sense.</p>
 
                                     <p class="buttons">
                                         <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
@@ -638,7 +630,7 @@ _________________________________________________________ -->
                             </div>
                         </div>
 
-                        <div class="reference-item" data-category="seo">
+                        <div class="reference-item" data-category="CarFinder">
                             <div class="reference">
                                 <a href="#">
                                     <img src="img/projects/carfinder.png" class="img-responsive" alt="" />
@@ -649,13 +641,9 @@ _________________________________________________________ -->
                                     </div>
                                 </a>
 
-                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+                                <div class="sr-only reference-description" data-images="img/carfinder01.gif,img/carfinder02.jpg">
 
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p>An online search tool where drivers can find out if a specific car has been recalled and why.</p>
 
                                     <p class="buttons">
                                         <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
@@ -665,7 +653,7 @@ _________________________________________________________ -->
                             </div>
                         </div>
 
-                        <div class="reference-item" data-category="webdesign">
+                        <div class="reference-item" data-category="Xamarin">
                             <div class="reference">
                                 <a href="#">
                                     <img src="img/projects/xamarin.png" class="img-responsive" alt="" />
@@ -676,13 +664,9 @@ _________________________________________________________ -->
                                     </div>
                                 </a>
 
-                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+                                <div class="sr-only reference-description" data-images="img/xamarin00.gif,img/xamarin01.gif">
 
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p>A C#-shared codebase that developers can use to write native Android, iOS, and Windows apps with native user interfaces and share code across multiple platforms, including Windows and macOS.</p>
 
                                     <p class="buttons">
                                         <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
@@ -711,8 +695,7 @@ _________________________________________________________ -->
             <div class="container">
                 <div class="col-md-12">
 
-
-                    <div class="row">
+                    <!--<div class="row">
                         <div class="col-sm-4 col-md-2  col-xs-6">
                             <div class="customer">
                                 <img class="img-responsive" src="img/customers/kofola.png" title="Kofola" data-placement="bottom" data-toggle="tooltip" alt="">
@@ -749,9 +732,8 @@ _________________________________________________________ -->
                             </div>
                         </div>
 
-                    </div>
+                    </div>-->
                     <!-- /.row -->
-
 
                 </div>
                 <!-- /.12 -->
@@ -835,9 +817,9 @@ _________________________________________________________ -->
         <div class="section" id="footer">
             <div class="container">
 
-                <div class="row">
-
-                    <div class="col-sm-6">
+                <!--<div class="row">
+                   <!--Hiding the social media links
+                    <!--<div class="col-sm-6">
 
                         <p class="social">
                             <a href="#" class="external facebook" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-facebook"></i></a>
@@ -845,25 +827,23 @@ _________________________________________________________ -->
                             <a href="#" class="external gplus" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-google-plus"></i></a>
                             <a href="#" class="email" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
                         </p>
-                    </div>
+                    </div>-->
                     <!-- /.6 -->
 
-                    <div class="col-sm-6">
+                    <!--<div class="col-sm-6">
                         <p>&copy; Christian Yves Dubuche 2017</p>
-                    </div>
+                    </div>-->
 
                     <div class="col-sm-12">
                         <p class="template-bootstrapious">Christian Yves Dubuche </p>
-                        
-                        
-                        
+                           
                     </div>
 
                 </div>
 
             </div>
             <!-- /.container -->
-        </div>
+        </div>-->
         <!-- /.section -->
 
         <!-- *** FOOTER END *** -->
