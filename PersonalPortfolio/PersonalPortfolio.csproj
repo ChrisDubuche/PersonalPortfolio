@@ -98,6 +98,7 @@
     <Content Include="css\fonts\font-mfizz.css" />
     <Content Include="css\fonts\font-mfizz.svg" />
     <Content Include="css\fonts\fontawesome-webfont.svg" />
+    <Content Include="img\Projects\Dubuche FSD Resume 2017.png" />
     <Content Include="JSExercises.html" />
     <Content Include="img\blogging01.gif" />
     <Content Include="img\blogging02.gif" />
@@ -148,6 +149,7 @@
     <Content Include="css\fonts\font-mfizz.eot" />
     <Content Include="css\fonts\font-mfizz.ttf" />
     <Content Include="css\fonts\font-mfizz.woff" />
+    <Content Include="img\Projects\Dubuche FSD Resume 2017.pdf" />
     <None Include="Properties\PublishProfiles\cdubuche-portfolio - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\cdubuche-portfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
