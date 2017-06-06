@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Exercises</title>
+    <meta charset="utf-8" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
+    <link href="Scripts/SyntaxHighlighter/styles/shThemeMidnight.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!--    Write the main container-->
+    <div id="outline" class="container">
+        <div id="row1" class="row">
+            <div class="col-md-12 text-center">
+                <h1>Javascript Exercises</h1>
+            </div>
+        </div>
+        <div class="row">
+            <!-- In here is where I will host my links-->
+            <div id="row2" class="col-md-6 text-center">
+                <div class="row">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#JSExercise1">Exercise #1</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#JSExercise2">Exercise #2</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#JSExercise3">Exercise #3</button>
+                </div>
+            </div>
+            <div id="row3" class="col-md-6 text-center">
+                <div class="row">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#JSExercise4">Exercise #4</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#JSExercise5">Exercise #5</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#JSExercise6">Exercise #6</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Define my modal with id="JavascriptExercises1"-->
+
+    <div id="JSExercise1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!--     Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">JS Exercise #1</h3>
+                    <h4>Math Calculations</h4>
+                </div>
+                <div class="modal-body">
+                    <!--    Here I will be adding HTML elements that allow for user input-->
+                    <p>Let's determine which numbers are the Smallest, Largest, Mean, Sum & Product of all.</p>
+                    <p>Enter <strong>5</strong> Numbers</p>
+                    <div class="row col-md-12">
+                        <form>
+                            Number 01:
+                            <input type="number" id="r1input1" /><br>
+                            <br>
+                            Number 02:
+                            <input type="number" id="r1input2" /><br>
+                            <br>
+                            Number 03:
+                            <input type="number" id="r1input3" /><br>
+                            <br>
+                            Number 04:
+                            <input type="number" id="r1input4" /><br>
+                            <br>
+                            Number 05:
+                            <input type="number" id="r1input5" /><br>
+                            <br>
+                            <hr />
+                        </form>
+                        <select id="operators">
+                            <option value="+">Sum</option>
+                            <option value="*">Product</option>
+                            <option value="/">Mean</option>
+                            <option value="<">Least</option>
+                            <option value=">">Greatest</option>
+                        </select>
+                        <!--              <button id="clickMe" type="button" value="clickme" onclick="calc()"/>-->
+                        <button type="button" class="btn btn-primary" onclick="calc()">Let's Go!</button>
+                        <input type="text" id="r1output1" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                <div class="row" style="background-color: white;">
+                    <pre style="border-radius: 9px;" class="brush: js;">
+                function calc() {
+
+                var num1 = parseInt(document.getElementById("r1input1").value);
+                var num2 = parseInt(document.getElementById("r1input2").value);
+                var num3 = parseInt(document.getElementById("r1input3").value);
+                var num4 = parseInt(document.getElementById("r1input4").value);
+                var num5 = parseInt(document.getElementById("r1input5").value);
+                var oper = document.getElementById("operators").value;
+
+                if (oper === "+") {  
+                    document.getElementById("r1output1").value = num1 + num2 + num3 + num4 + num5;
+                }
+                if (oper === "*") {
+                    document.getElementById("r1output1").value = num1 * num2 * num3 * num4 * num5;
+                }
+                if (oper === "/") {
+                    document.getElementById("r1output1").value = (num1 + num2 + num3 + num4 + num5) / 5;
+                }
+                if (oper === "<") {
+                    document.getElementById("r1output1").value = Math.min(num1, num2, num3, num4, num5);
+                }
+                if (oper === ">") {
+                    document.getElementById("r1output1").value = Math.max(num1, num2, num3, num4, num5);
+                }
+            }                
+            </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="JSExercise2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!--     Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">JS Exercise #2</h3>
+                    <h4>Finding Factorials</h4>
+                </div>
+                <div class="modal-body">
+                    <!--    Here I will be adding HTML elements that allow for user input-->
+                    <p>Enter a <strong>POSITIVE</strong> integer to find its Factorial.</p>
+                    <input type="number" id="r2input1" />
+                    <button type="button" class="btn btn-primary" onclick="factorialize()">Let's Go!</button>
+                    <input type="text" id="r2output2" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                <div class="row" style="background-color: white;">
+                    <pre style="border-radius: 9px;" class="brush: js;">
+                function factorialize(num) {
+    
+                    var answer = 1
+                    var num = parseInt(document.getElementById("r2input1").value);
+                    innerFunc(num);
+                    function innerFunc(input) {
+                        if (input === 0) {
+                        return answer;
+                        }
+                        answer *= num;
+                         num--;
+                        if (num > 1) {
+                            innerFunc(num);
+                        }
+                        return answer;
+                        }
+                    document.getElementById("r2output2").value = answer;
+                    }
+            </pre>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="JSExercise3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!--     Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">JS Exercise #3</h3>
+                    <h4>Finding Multiples: Fizz, Buzz or FizzBuzz</h4>
+                </div>
+                <div class="modal-body">
+                    <!--    Here I will be adding HTML elements that allow for user input-->
+                    <p>Enter two <strong>different</strong> numbers between 1 & 100.</p>
+                    <form>
+                        Number 01:
+                        <input type="number" id="r3input1" /><br>
+                        <br>
+                        Number 02:
+                        <input type="number" id="r3input2" /><br>
+                        <br>
+                    </form>
+                    <button type="button" class="btn btn-primary" onclick="fizzBuzz()">Let's Go!</button>
+                    <!--<input type="text" id="r3output1"/>-->
+                    <div class="row col-md-12" id="r3output1" style="word-wrap: break-word; height: 100px"></div>
+                </div>
+                <hr />
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                <div class="row" style="background-color: white;">
+                    <pre style="border-radius: 9px;" class="brush: js;">
+                function fizzBuzz() {
+
+                    var num01 = parseInt(document.getElementById("r3input1").value);
+                    var num02 = parseInt(document.getElementById("r3input2").value);
+                    var output = '';
+                    for (var i = 1; i <= 100; i++) {
+
+                        if (i % num01 == 0 && i % num02 == 0) {
+                            output += 'FIZZ-BUZZ, ';
+                        }
+                        else if (i % num01 == 0) {
+                            output += 'FIZZ, ';
+                        }
+                        else if (i % num02 == 0) {
+                            output += 'BUZZ, ';
+                        }
+                        else {
+                            output += i + ", ";
+                        }
+                    }
+                    document.getElementById("r3output1").innerHTML = output;
+                }
+                
+
+            </pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="JSExercise4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!--     Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">JS Exercise #4</h3>
+                    <h4>Is it a ¿¿¿Palindrome???</h4>
+
+                    <div class="modal-body">
+                        <!--    Here I will be adding HTML elements that allow for user input-->
+                        <p>Type a word in <b>lowercase</b> and see if it's a Palindrome. *CaSe SeNsItIvE eXeCiSe*</p>
+                        <div class="row">
+                            <input type="text" id="r4input1" />
+                            <button class="btn btn-primary" onclick="Palindrome()">Let's Go!</button>
+                        </div>
+                        <div class="row">
+                            <span id="r4output1"></span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <div class="row" style="background-color: white;">
+                    <pre style="border-radius: 9px;" class="brush: js;">
+
+                function Palindrome(){
+
+                    var word = $('#r4input1').val();
+                    var revword = word.split('').reverse().join('');
+                    var magicWord = ' IS NOT ';
+                    if (word == revword) {
+                        magicWord = ' IS ';
+                    }
+                    var result = word + ' reversed = ' + revword + 
+                    <b>'. Therefore it '</b> + magicWord + ' a palindrome';
+                    $('#r4output1').html(result);
+                }
+
+            </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="JSExercise5" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!--     Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">JS Exercise #5</h3>
+                    <h4>EXERCISE TBD</h4>
+                </div>
+                <div class="modal-body">
+                    <!--    Here I will be adding HTML elements that allow for user input-->
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="JSExercise6" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!--     Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">JS Exercise #6</h3>
+                    <h4>EXERCISE TBD</h4>
+                </div>
+                <div class="modal-body">
+                    <!--    Here I will be adding HTML elements that allow for user input-->
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr />
+    <h3>Try it Yourself »</h3>
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+    <script src="js/mycustom.js"></script>
+
+</body>
+</html>

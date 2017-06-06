@@ -1,1 +1,13 @@
-/* your styles go here */
+
+@media (min-width: 992px) {
+    .modal-xl {
+        width: 95%;
+    }
+}
+
+#row1, #row2, #row3 {
+    border: 2px solid black;
+    border-radius: 9px;
+    padding: 5px;
+      
+}
