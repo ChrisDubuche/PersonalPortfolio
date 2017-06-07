@@ -71,8 +71,7 @@ function fizzBuzz() {
     }
     document.getElementById("r3output1").innerHTML = output;
 }
-
-
+// you're going to need a substring function to remove the last comma from the results (trailing comma)
 function Palindrome() {
     var word = $('#r4input1').val();
 
@@ -87,3 +86,4 @@ function Palindrome() {
     var result = word + ' reversed = ' + revword + '. Therefore it <b>' + magicWord + '</b> a palindrome';
     $('#r4output1').html(result);
 }
+

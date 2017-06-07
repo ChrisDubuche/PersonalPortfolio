@@ -233,6 +233,10 @@ $('#filter a').click(function (e) {
  *  open reference 
  *  =======================================*/
 
+$('.reference-item #customModalJS').click(function (e) {
+    e.preventDefault();
+});
+
 $('.reference-item').click(function (e) {
     e.preventDefault();
 
